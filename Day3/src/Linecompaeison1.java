@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Linecomparison {
+public class Linecompaeison1 {
     public static void main(String[] args) {
         Scanner Sc = new Scanner(System.in);
         System.out.println("Enter the value of X1 in line 1");
@@ -27,13 +27,10 @@ public class Linecomparison {
         double length2 = Math.sqrt(((a2 - a1)*(a2 - a1) +(b2 - b1) * (b2 - b1)));
         System.out.println("The line length 2 is :" + length2);
 
-        if (length1 > length2){
-            System.out.println(" Line 1 is grater than line 2");
-        } else if (length1 < length2) {
-            System.out.println("Line 1 is shorter than line 2");
-
+        if (length1 == length2){
+            System.out.println(" Both lines are equal");
         } else {
-            System.out.println("Both lines are equal");
+            System.out.println("Both lines are not equal");
         }
     }
 }
